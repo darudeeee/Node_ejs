@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <meta name="description" content="My first application using Node.js, Express and MongoDB">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <div class="container">   
+
+    <!-- 헤더 : 로고, 상단 메뉴, 로그인 -->
+    <header class="header">
+      <!-- 로고 -->
+      <a href="/" class="header-logo">Admin Page</a>
+
+      <!-- 상단 메뉴 -->
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 관리자 로그아웃 : 관리자로 로그인 안했는데 뜨는 버튼을 로그인 전/후로 분리
+      <div class="header-button">
+        <a href="#">관리자 로그아웃</a>
+      </div> -->
+    </header>
+
+    <!-- 메인 : 실제 내용이 들어갈 부분 -->    
+    <main class="main">
+      <%- body %> <!-- 이부분 복붙 후에도 수정 해주어야 함 -->
+    </main>
+  </div>  
+
+</body>
+</html>
